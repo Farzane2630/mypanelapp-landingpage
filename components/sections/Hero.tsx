@@ -1,3 +1,3 @@
 export default function Hero() {
-  return <div>Hero</div>;
+  return <section aria-label="hero-section">Hero</section>;
 }

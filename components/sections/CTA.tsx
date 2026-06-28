@@ -1,3 +1,3 @@
 export default function CTA() {
-  return <div>CTA</div>;
+  return <section aria-label="cta-section">CTA</section>;
 }

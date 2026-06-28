@@ -1,3 +1,3 @@
 export default function Features() {
-  return <div>Features</div>;
+  return <section aria-label="features-section">Features</section>;
 }
