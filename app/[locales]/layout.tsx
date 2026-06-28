@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/shared/Header";
+import Header from "../../components/shared/Header";
 
 export const metadata: Metadata = {
   title: "My Panel App",
