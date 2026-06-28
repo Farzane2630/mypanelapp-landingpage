@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import Header from "../../components/shared/Header";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "My Panel App",
@@ -17,10 +16,7 @@ export default function RootLayout({
       lang="en"
       className="h-full antialiased w-full flex flex-col justify-center items-start"
     >
-      <body className="min-h-full w-full flex flex-col pt-6 items-center justify-start">
-        <Header />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
