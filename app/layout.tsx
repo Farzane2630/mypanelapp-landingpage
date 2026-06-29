@@ -5,8 +5,13 @@ import Footer from "@/components/layout/footer";
 import { Geist } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "My Panel App",
-  description: "No-code SAAS to build online booking platform in seconds",
+  metadataBase: new URL("https://mypanelapp.ir"),
+  title: {
+    default: "MyPanelApp",
+    template: "%s | MyPanelApp",
+  },
+  description:
+    "Create and manage your online booking platform in minutes with MyPanelApp.",
 };
 const geist = Geist({ subsets: ["latin"] });
 
