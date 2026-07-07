@@ -37,7 +37,7 @@ export default async function RootLayout({
 
   setRequestLocale(locale);
   return (
-    <html lang="en" suppressHydrationWarning className={geist.className}>
+    <html lang={locale} suppressHydrationWarning className={geist.className}>
       <body className="min-h-screen antialiased">
         <NextIntlClientProvider>
           <Navbar />
