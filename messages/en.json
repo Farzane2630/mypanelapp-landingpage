@@ -1,0 +1,164 @@
+{
+    "metadata": {
+        "title": "MyPanelApp | Online Appointment Booking for Beauty & Service Businesses",
+        "description": "Accept appointments online, manage your calendar, customers and services from one modern dashboard."
+    },
+    "navbar": {
+        "features": "Features",
+        "businesses": "Who It's For",
+        "pricing": "Pricing",
+        "demo": "Demo",
+        "faq": "FAQ",
+        "roadmap": "Roadmap",
+        "login": "Login",
+        "startTrial": "Start Free Trial"
+    },
+    "hero": {
+        "badge": "All-in-one booking management platform",
+        "title": "Your online receptionist, available 24/7.",
+        "description": "Let customers book appointments anytime while you manage your business from one beautiful dashboard.",
+        "primaryButton": "Start Free Trial",
+        "secondaryButton": "Watch Live Demo",
+        "features": {
+            "setup": "Setup in 5 minutes",
+            "card": "No credit card required",
+            "guest": "Guest booking"
+        },
+        "trial": "14-day free trial • Cancel anytime"
+    },
+    "socialProof": {
+        "title": "Perfect for businesses like"
+    },
+    "why": {
+        "title": "Why choose MyPanelApp?",
+        "booking": {
+            "title": "Accept bookings while you sleep",
+            "description": "Customers can schedule appointments 24/7 from any device."
+        },
+        "manage": {
+            "title": "Manage everything in one place",
+            "description": "Appointments, customers, calendar, services and reports—all in one dashboard."
+        },
+        "start": {
+            "title": "Start today, it's that easy",
+            "description": "No technical knowledge. No installation. Just create your page and start accepting bookings."
+        }
+    },
+    "dashboard": {
+        "badge": "All-in-one dashboard",
+        "title": "Everything you need to run your business",
+        "description": "Powerful tools to save time, reduce no-shows and grow your business.",
+        "button": "Explore all features",
+        "tabs": {
+            "appointments": "Appointments",
+            "calendar": "Calendar",
+            "customers": "Customers",
+            "services": "Services",
+            "settings": "Settings"
+        }
+    },
+    "booking": {
+        "badge": "Beautiful booking experience",
+        "title": "Your customers will love booking with you",
+        "description": "A simple and fast booking experience that increases customer satisfaction.",
+        "steps": {
+            "service": "Choose Service",
+            "staff": "Choose Specialist",
+            "date": "Choose Date & Time",
+            "details": "Your Information",
+            "done": "Booking Confirmed"
+        }
+    },
+    "businesses": {
+        "title": "Perfect for businesses like yours",
+        "items": {
+            "salon": "Beauty Salons",
+            "spa": "Spa Centers",
+            "nails": "Nail Artists",
+            "facial": "Facial Specialists",
+            "laser": "Laser Clinics",
+            "carwash": "Car Washes",
+            "massage": "Massage Centers",
+            "barber": "Barber Shops"
+        }
+    },
+    "testimonials": {
+        "title": "Loved by business owners",
+        "items": {
+            "1": {
+                "name": "Sara",
+                "role": "Beauty Salon Owner",
+                "text": "I no longer spend my day answering booking calls. My clients simply book online."
+            },
+            "2": {
+                "name": "Ali",
+                "role": "Car Wash Owner",
+                "text": "Managing appointments is finally easy. No more double bookings."
+            },
+            "3": {
+                "name": "Maryam",
+                "role": "Nail Artist",
+                "text": "Professional, simple and exactly what my business needed."
+            }
+        }
+    },
+    "pricing": {
+        "title": "Simple, transparent pricing",
+        "free": {
+            "name": "Free",
+            "description": "Perfect for getting started",
+            "button": "Start Free",
+            "features": [
+                "Booking page",
+                "Calendar",
+                "Customer management",
+                "Email notifications",
+                "Guest booking"
+            ]
+        },
+        "pro": {
+            "name": "Pro",
+            "description": "Unlock advanced features",
+            "badge": "Most Popular",
+            "button": "Start Free Trial",
+            "features": [
+                "SMS reminders",
+                "Online payments",
+                "Google Maps location",
+                "Deposit payments",
+                "Cancellation link",
+                "Upcoming premium features"
+            ]
+        }
+    },
+    "trial": {
+        "title": "14-day free trial",
+        "description": "No credit card required.",
+        "features": {
+            "cancel": "Cancel anytime",
+            "upgrade": "Upgrade or downgrade anytime",
+            "support": "We're here to help your business grow."
+        }
+    },
+    "cta": {
+        "title": "Ready to accept your next booking online?",
+        "description": "Join thousands of businesses growing with MyPanelApp.",
+        "primary": "Start Free Trial",
+        "secondary": "Watch Live Demo"
+    },
+    "footer": {
+        "product": "Product",
+        "company": "Company",
+        "resources": "Resources",
+        "language": "Language",
+        "links": {
+            "features": "Features",
+            "pricing": "Pricing",
+            "roadmap": "Roadmap",
+            "faq": "FAQ",
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service",
+            "contact": "Contact"
+        }
+    }
+}
