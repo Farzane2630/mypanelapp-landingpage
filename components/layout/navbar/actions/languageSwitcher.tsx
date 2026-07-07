@@ -1,15 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { useLocale } from "next-intl";
 
 export default function LanguageSwitcher() {
-  const [language, setLanguage] = useState<"en" | "fa">("en");
-  const handleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "fa" : "en"));
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const nextLocale = locale === "en" ? "fa" : "en";
+  const switchLocale = (newLocale: string) => {
+    router.replace(pathname, { locale: newLocale });
   };
   return (
-    <button type="button" onClick={handleLanguage}>
-      {language === "en" ? "fa" : "en"}
+    <button type="button" onClick={() => switchLocale(nextLocale)}>
+      {nextLocale}
     </button>
   );
 }

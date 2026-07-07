@@ -1,11 +1,12 @@
 import HeroActions from "./hero-actions";
+import { getTranslations } from "next-intl/server";
 
-export default function HeroContent() {
+export default async function HeroContent() {
+  const t = await getTranslations("hero");
   return (
     <div>
-      <span></span>
       <h1>My Panel App</h1>
-      <p>Build online booking platforms in minutes</p>
+      <p>{t("title")}</p>
       <HeroActions />
     </div>
   );

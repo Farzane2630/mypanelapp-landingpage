@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  // update this when importing image from remote url to improve safety and ba  as specific as possible
   images: {
     remotePatterns: [
       {
@@ -9,10 +11,9 @@ const nextConfig: NextConfig = {
         hostname: "",
         port: "",
         pathname: "/**",
-        search: "",
       },
     ],
   },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);
