@@ -1,5 +1,5 @@
 import Actions from "./actions/actions";
-import Logo from "./logo";
+import Logo from "../../shared/logo";
 import Navigation from "./navigation";
 
 export default function Navbar() {

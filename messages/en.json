@@ -1,4 +1,5 @@
 {
+    "appname": "MyPanelApp",
     "metadata": {
         "title": "MyPanelApp | Online Appointment Booking for Beauty & Service Businesses",
         "description": "Accept appointments online, manage your calendar, customers and services from one modern dashboard."
@@ -147,6 +148,8 @@
         "secondary": "Watch Live Demo"
     },
     "footer": {
+        "appname": "MyPanelApp",
+        "description": "The all-in-one booking management platform for businesses.",
         "product": "Product",
         "company": "Company",
         "resources": "Resources",

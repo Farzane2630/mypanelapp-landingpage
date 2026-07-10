@@ -37,7 +37,12 @@ export default async function RootLayout({
 
   setRequestLocale(locale);
   return (
-    <html lang={locale} suppressHydrationWarning className={geist.className}>
+    <html
+      lang={locale}
+      suppressHydrationWarning
+      className={geist.className}
+      dir={locale === "fa" ? "rtl" : "ltr"}
+    >
       <body className="min-h-screen antialiased">
         <NextIntlClientProvider>
           <Navbar />
