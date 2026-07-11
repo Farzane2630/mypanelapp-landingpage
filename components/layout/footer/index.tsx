@@ -32,23 +32,23 @@ export default async function Footer() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col items-start justify-start gap-y-2 text-md text-slate-900 font-semibold">
-        <Link href="/">Products</Link>
-        <Link href="/">Features</Link>
-        <Link href="/">Pricing</Link>
-        <Link href="/">Demo</Link>
+      <div className="hidden md:flex flex-col items-start justify-start gap-y-2 text-md text-slate-900 font-semibold">
+        <Link href="/">{t("product")}</Link>
+        <Link href="/">{t("links.pricing")}</Link>
+        <Link href="/">{t("links.features")}</Link>
+        <Link href="/">{t("links.faq")}</Link>
       </div>
-      <div className="flex flex-col items-start justify-start gap-y-2 text-md text-slate-900 font-semibold">
-        <Link href="/">Products</Link>
-        <Link href="/">Features</Link>
-        <Link href="/">Pricing</Link>
-        <Link href="/">Demo</Link>
+      <div className="hidden md:flex flex-col items-start justify-start gap-y-2 text-md text-slate-900 font-semibold">
+        <Link href="/">{t("product")}</Link>
+        <Link href="/">{t("links.pricing")}</Link>
+        <Link href="/">{t("links.features")}</Link>
+        <Link href="/">{t("links.faq")}</Link>
       </div>{" "}
-      <div className="flex flex-col items-start justify-start gap-y-2 text-md text-slate-900 font-semibold">
-        <Link href="/">Products</Link>
-        <Link href="/">Features</Link>
-        <Link href="/">Pricing</Link>
-        <Link href="/">Demo</Link>
+      <div className="hidden md:flex flex-col items-start justify-start gap-y-2 text-md text-slate-900 font-semibold">
+        <Link href="/">{t("product")}</Link>
+        <Link href="/">{t("links.pricing")}</Link>
+        <Link href="/">{t("links.features")}</Link>
+        <Link href="/">{t("links.faq")}</Link>
       </div>
       <div className="w-full hidden max-w-1/5 md:flex flex-col items-center justify-start gap-y-2 text-md text-slate-900 font-semibold">
         <p className="text-lg text-slate-900 font-bold">{t("language")}</p>

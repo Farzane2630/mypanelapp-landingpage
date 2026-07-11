@@ -36,6 +36,7 @@ export default async function RootLayout({
   }
 
   setRequestLocale(locale);
+
   return (
     <html
       lang={locale}
@@ -43,7 +44,7 @@ export default async function RootLayout({
       className={geist.className}
       dir={locale === "fa" ? "rtl" : "ltr"}
     >
-      <body className="min-h-screen antialiased">
+      <body className="min-h-screen bg-slate-200 text-slate-800 antialiased">
         <NextIntlClientProvider>
           <Navbar />
           <main>{children}</main>
