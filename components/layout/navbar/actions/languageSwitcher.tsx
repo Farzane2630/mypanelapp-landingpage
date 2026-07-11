@@ -1,16 +1,11 @@
 "use client";
 
-import { usePathname, useRouter } from "@/i18n/navigation";
-import { useLocale } from "next-intl";
+import { useLocaleSwitch } from "@/hooks/useLocaleSwitch";
 
 export default function LanguageSwitcher() {
-  const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
+  const { locale, switchLocale } = useLocaleSwitch();
   const nextLocale = locale === "en" ? "fa" : "en";
-  const switchLocale = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale });
-  };
+
   return (
     <button type="button" onClick={() => switchLocale(nextLocale)}>
       {nextLocale}
