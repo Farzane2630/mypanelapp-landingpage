@@ -4472,6 +4472,11 @@ svgo@^3.0.2:
     picocolors "^1.0.0"
     sax "^1.5.0"
 
+tailwind-merge@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.npmmirror.com/tailwind-merge/-/tailwind-merge-3.6.0.tgz#88d83242d1dd7bc847223f73dcf210dd1f2ee11c"
+  integrity sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==
+
 tailwindcss@4.3.1, tailwindcss@^4:
   version "4.3.1"
   resolved "https://registry.npmmirror.com/tailwindcss/-/tailwindcss-4.3.1.tgz#78ee06f6186bc8fb9603f8083eb703dc7dd96a10"

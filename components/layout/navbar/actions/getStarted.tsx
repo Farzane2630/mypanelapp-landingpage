@@ -1,15 +1,29 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
-export default function GetStarted() {
+type GetStartedProps = {
+  className?: string;
+  title?: string;
+  href?: string;
+};
+
+export default function GetStarted({
+  className,
+  title,
+  href,
+}: GetStartedProps) {
   const t = useTranslations("navbar");
   return (
     <Link
-      className=" w-fit border-2 border-purple-800 text-purple-950 font-bold px-8 py-2 rounded-lg hover:bg-purple-800 hover:text-white"
+      className={twMerge(
+        "w-fit border-2 border-purple-800 text-purple-950 font-bold px-8 py-2 rounded-lg hover:bg-purple-800 hover:text-white",
+        className,
+      )}
       target="_blank"
-      href="https://panel.mypanelapp.ir"
+      href={href ? href : "https://panel.mypanelapp.ir"}
     >
-      {t("demo")}
+      {title ? title : t("demo")}
     </Link>
   );
 }
