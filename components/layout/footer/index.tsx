@@ -7,6 +7,29 @@ import LinkedIn from "@/components/ui/icons/linkedin.svg";
 import Language from "./language";
 import { getTranslations } from "next-intl/server";
 
+const socials = [
+  {
+    icon: <Facebook className="w-8 h-8" />,
+    href: "#",
+    label: "Facebook",
+  },
+  {
+    icon: <Instagram className="w-8 h-8" />,
+    href: "#",
+    label: "Instagram",
+  },
+  {
+    icon: <Twitter className="w-8 h-8" />,
+    href: "#",
+    label: "Twitter",
+  },
+  {
+    icon: <LinkedIn className="w-8 h-8" />,
+    href: "#",
+    label: "Linkedin",
+  },
+];
+
 export default async function Footer() {
   const t = await getTranslations("footer");
   return (
@@ -18,20 +41,14 @@ export default async function Footer() {
         </div>
         <p className="text-sm text-slate-900 font-medium">{t("description")}</p>
         <div className="social-links flex justify-between items-center w-full">
-          <Link href="/">
-            <Facebook className="w-8 h-8 hover:fill-purple-950 hover:stroke-purple-950" />
-          </Link>
-          <Link href="/">
-            <Instagram className="w-8 h-8 hover:fill-purple-950 hover:stroke-purple-950" />
-          </Link>
-          <Link href="/">
-            <Twitter className="w-8 h-8 hover:fill-purple-950 hover:stroke-purple-950" />
-          </Link>
-          <Link href="/">
-            <LinkedIn className="w-8 h-8 hover:fill-purple-950 hover:stroke-purple-950" />
-          </Link>
+          {socials.map((item) => (
+            <Link key={item.label} href={item.href} aria-label={item.label}>
+              {item.icon}
+            </Link>
+          ))}
         </div>
       </div>
+      {/* placeholder */}
       <div className="hidden md:flex flex-col items-start justify-start gap-y-2 text-md text-slate-900 font-semibold">
         <Link href="/">{t("product")}</Link>
         <Link href="/">{t("links.pricing")}</Link>
@@ -43,7 +60,7 @@ export default async function Footer() {
         <Link href="/">{t("links.pricing")}</Link>
         <Link href="/">{t("links.features")}</Link>
         <Link href="/">{t("links.faq")}</Link>
-      </div>{" "}
+      </div>
       <div className="hidden md:flex flex-col items-start justify-start gap-y-2 text-md text-slate-900 font-semibold">
         <Link href="/">{t("product")}</Link>
         <Link href="/">{t("links.pricing")}</Link>

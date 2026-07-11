@@ -21,9 +21,10 @@ export default function GetStarted({
         className,
       )}
       target="_blank"
-      href={href ? href : "https://panel.mypanelapp.ir"}
+      rel="noopener noreferrer"
+      href={href ?? "https://panel.mypanelapp.ir"}
     >
-      {title ? title : t("demo")}
+      {title ?? t("demo")}
     </Link>
   );
 }

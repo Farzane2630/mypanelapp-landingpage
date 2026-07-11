@@ -5,10 +5,12 @@ export default async function CTA() {
   const t = await getTranslations("cta");
   return (
     <section
-      aria-label="cta-section"
+      aria-label="cta-headeing"
       className="grid py-4 bg-purple-700 justify-items-center gap-y-3"
     >
-      <p className="font-bold text-xl text-white text-center">{t("title")}</p>
+      <h2 id="cta-heading" className="font-bold text-xl text-white text-center">
+        {t("title")}
+      </h2>
       <p className="font-base text-md text-white text-center">
         {t("description")}
       </p>
