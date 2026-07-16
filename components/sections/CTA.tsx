@@ -6,15 +6,17 @@ export default async function CTA() {
   return (
     <section
       aria-label="cta-headeing"
-      className="grid py-4 bg-purple-700 justify-items-center gap-y-3"
+      className="grid justify-items-center gap-y-3 bg-purple-700 py-4"
     >
-      <h2 id="cta-heading" className="font-bold text-xl text-white text-center">
+      <h2 id="cta-heading" className="text-center text-xl font-bold text-white">
         {t("title")}
       </h2>
-      <p className="font-base text-md text-white text-center">
-        {t("description")}
-      </p>
-      <GetStarted className="bg-white text-purple-700 " title={t("primary")} />
+      <p className="font-base text-md text-center text-white">{t("description")}</p>
+      <GetStarted
+        className="bg-white text-purple-700"
+        title={t("primary")}
+        href={`${process.env.NEXT_PUBLIC_ADMIN_URL}`}
+      />
     </section>
   );
 }

@@ -4,9 +4,11 @@ import Navigation from "./navigation";
 
 export default function Navbar() {
   return (
-    <header className="flex items-center justify-between px-8 py-4 w-full gap-x-4">
+    <header className="flex w-full items-center justify-between gap-x-2 px-4 py-4">
       <Logo />
-      <Navigation />
+      <div className="hidden w-full sm:flex">
+        <Navigation />
+      </div>
       <Actions />
     </header>
   );

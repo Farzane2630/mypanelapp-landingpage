@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import Navigation from "@/components/layout/navbar/navigation";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -18,8 +19,7 @@ export const metadata: Metadata = {
     default: "MyPanelApp",
     template: "%s | MyPanelApp",
   },
-  description:
-    "Create and manage your online booking platform in minutes with MyPanelApp.",
+  description: "Create and manage your online booking platform in minutes with MyPanelApp.",
 };
 const geist = Geist({ subsets: ["latin"] });
 
@@ -44,11 +44,14 @@ export default async function RootLayout({
       className={geist.className}
       dir={locale === "fa" ? "rtl" : "ltr"}
     >
-      <body className="min-h-screen bg-slate-200 text-slate-800 antialiased">
+      <body className="relative min-h-screen bg-slate-200 text-slate-800 antialiased">
         <NextIntlClientProvider>
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <div className="sticky bottom-0 flex min-h-18 items-end sm:hidden">
+            <Navigation />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -4,6 +4,7 @@ import { useLocaleSwitch } from "@/hooks/useLocaleSwitch";
 import LanguageIcon from "@/components/ui/icons/language.svg";
 import { useState, useRef } from "react";
 import { LocaleType } from "@/types/Locales";
+import { twMerge } from "tailwind-merge";
 
 export default function LanguageSwitcher() {
   const { locale, switchLocale } = useLocaleSwitch();
@@ -36,7 +37,10 @@ export default function LanguageSwitcher() {
 
       {isOpen && (
         <div
-          className="absolute top-12 right-0 z-50 min-w-35 rounded-xl border border-gray-200 bg-white p-1 shadow-lg"
+          className={twMerge(
+            "absolute top-12 z-50 min-w-35 rounded-xl border border-gray-200 bg-white p-1 shadow-lg",
+            locale === "fa" ? "left-0" : "right-0"
+          )}
           id="language-menu"
           role="menu"
           aria-label="Language options"

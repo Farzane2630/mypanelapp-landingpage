@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
@@ -10,6 +10,7 @@ type GetStartedProps = {
 
 export default function GetStarted({ className, title, href }: GetStartedProps) {
   const t = useTranslations("navbar");
+  const locale = useLocale();
   return (
     <Link
       className={twMerge(
@@ -18,7 +19,10 @@ export default function GetStarted({ className, title, href }: GetStartedProps) 
       )}
       target="_blank"
       rel="noopener noreferrer"
-      href={`${href ?? process.env.NEXT_PUBLIC_ADMIN_URL}` || ""}
+      href={
+        href ??
+        `${locale === "en" ? process.env.NEXT_PUBLIC_DEMO_URL_EN : process.env.NEXT_PUBLIC_DEMO_URL_FA}`
+      }
     >
       {title ?? t("demo")}
     </Link>
