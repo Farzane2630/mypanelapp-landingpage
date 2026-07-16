@@ -36,7 +36,7 @@ export default function LanguageSwitcher() {
 
       {isOpen && (
         <div
-          className="absolute right-0 top-12 z-50 min-w-35 rounded-xl border border-gray-200 bg-white p-1 shadow-lg"
+          className="absolute top-12 right-0 z-50 min-w-35 rounded-xl border border-gray-200 bg-white p-1 shadow-lg"
           id="language-menu"
           role="menu"
           aria-label="Language options"
@@ -46,9 +46,7 @@ export default function LanguageSwitcher() {
               key={lang.value}
               type="button"
               onClick={() => handleChangeLanguage(lang.value)}
-              className={` flex w-full items-center rounded-lg px-3 py-2 text-sm transition hover:bg-gray-100
-                ${locale === lang.value ? "bg-gray-100 font-medium" : ""}
-              `}
+              className={`flex w-full items-center rounded-lg px-3 py-2 text-sm transition hover:bg-gray-100 ${locale === lang.value ? "bg-gray-100 font-medium" : ""} `}
             >
               {lang.label}
             </button>
