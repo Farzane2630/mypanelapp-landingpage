@@ -8,21 +8,17 @@ type GetStartedProps = {
   href?: string;
 };
 
-export default function GetStarted({
-  className,
-  title,
-  href,
-}: GetStartedProps) {
+export default function GetStarted({ className, title, href }: GetStartedProps) {
   const t = useTranslations("navbar");
   return (
     <Link
       className={twMerge(
-        "w-fit border-2 border-purple-800 text-purple-950 font-bold px-8 py-2 rounded-lg hover:bg-purple-800 hover:text-white",
-        className,
+        "w-fit rounded-lg border-2 border-purple-800 px-8 py-2 font-bold text-purple-950 hover:bg-purple-800 hover:text-white",
+        className
       )}
       target="_blank"
       rel="noopener noreferrer"
-      href={href ?? "https://panel.mypanelapp.ir"}
+      href={`${href ?? process.env.NEXT_PUBLIC_ADMIN_URL}` || ""}
     >
       {title ?? t("demo")}
     </Link>
