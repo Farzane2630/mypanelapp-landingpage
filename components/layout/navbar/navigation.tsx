@@ -6,7 +6,7 @@ export default function Navigation() {
   const t = useTranslations("navbar");
   const locale = useLocale() as LocaleType;
   return (
-    <nav className="w-full">
+    <nav className="w-full lg:max-w-3/5">
       <ul className="nav__list flex w-full justify-between bg-slate-100 px-2 py-3 font-bold text-slate-600 sm:bg-transparent sm:px-0 sm:py-0">
         <li className="border-0 border-b-purple-800 pb-1 sm:border-b-2">
           <Link href="/features">{t("features")}</Link>
