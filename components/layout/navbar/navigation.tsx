@@ -5,36 +5,36 @@ import Link from "next/link";
 export default function Navigation() {
   const t = useTranslations("navbar");
   const locale = useLocale() as LocaleType;
+  const navItems = [
+    { href: "/features", title: t("features") },
+    { href: "/businesses", title: t("businesses") },
+    { href: "/pricing", title: t("pricing") },
+    {
+      href:
+        `${
+          locale === "en"
+            ? process.env.NEXT_PUBLIC_DEMO_URL_EN
+            : process.env.NEXT_PUBLIC_DEMO_URL_FA
+        }` || "",
+      title: t("demo"),
+      target: true,
+    },
+    { href: "/faq", title: t("faq") },
+  ];
   return (
     <nav className="w-full lg:max-w-3/5">
       <ul className="nav__list flex w-full justify-between bg-slate-100 px-2 py-3 font-bold text-slate-600 sm:bg-transparent sm:px-0 sm:py-0">
-        <li className="border-0 border-b-purple-800 pb-1 sm:border-b-2">
-          <Link href="/features">{t("features")}</Link>
-        </li>
-        <li className="border-0 border-b-purple-800 pb-1 sm:border-b-2">
-          <Link href="/businesses">{t("businesses")}</Link>
-        </li>
-        <li className="border-0 border-b-purple-800 pb-1 sm:border-b-2">
-          <Link href="/pricing">{t("pricing")}</Link>
-        </li>
-        <li className="border-0 border-b-purple-800 pb-1 sm:border-b-2">
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href={
-              `${
-                locale === "en"
-                  ? process.env.NEXT_PUBLIC_DEMO_URL_EN
-                  : process.env.NEXT_PUBLIC_DEMO_URL_FA
-              }` || ""
-            }
-          >
-            {t("demo")}
-          </Link>
-        </li>
-        <li className="border-0 border-b-purple-800 pb-1 sm:border-b-2">
-          <Link href="/faq">{t("faq")}</Link>
-        </li>
+        {navItems.map((item) => (
+          <li key={item.href} className="border-0 border-b-purple-800 pb-1 sm:border-b-2">
+            {item.target ? (
+              <Link href={item.href} target="_blank" rel="noopener noreferrer">
+                {item.title}
+              </Link>
+            ) : (
+              <Link href={item.href}>{item.title}</Link>
+            )}
+          </li>
+        ))}
       </ul>
     </nav>
   );
