@@ -15,17 +15,23 @@
         "startTrial": "Start Free Trial"
     },
     "hero": {
-        "badge": "All-in-one booking management platform",
-        "title": "Your online receptionist, available 24/7.",
-        "description": "Let customers book appointments anytime while you manage your business from one beautiful dashboard.",
-        "primaryButton": "Start Free Trial",
-        "secondaryButton": "Watch Live Demo",
-        "features": {
-            "setup": "Setup in 5 minutes",
-            "card": "No credit card required",
-            "guest": "Guest booking"
+        "imageAlt": "Screenshot of appointments in the admin dashboard",
+        "title": {
+            "highlight": "Smart Booking.",
+            "line1": "Happier Customers.",
+            "line2": "More Time for You."
         },
-        "trial": "14-day free trial • Cancel anytime"
+        "description": "MyPanelApp is the all-in-one booking management platform that helps businesses automate appointments, send reminders, and grow effortlessly.",
+        "features": {
+            "onlineBooking": "24/7 Online Booking",
+            "reminders": "Automated SMS & Email Reminders",
+            "googleMaps": "Google Maps Integration",
+            "payments": "Secure Online Payments & Deposits"
+        },
+        "cta": {
+            "startFreeTrial": "Start Free Trial",
+            "watchDemo": "Watch Demo"
+        }
     },
     "socialProof": {
         "title": "Perfect for businesses like"

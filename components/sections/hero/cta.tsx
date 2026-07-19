@@ -1,6 +1,7 @@
 import GetStarted from "@/components/layout/navbar/actions/getStarted";
 import Play from "@/components/ui/icons/play.svg";
 export default function CTA() {
+    const t = 
   return (
     <div className="flex w-full flex-col gap-2 sm:flex-row">
       <GetStarted
