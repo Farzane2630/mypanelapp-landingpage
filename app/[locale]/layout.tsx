@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import Navigation from "@/components/layout/navbar/navigation";
+import CTA from "@/components/sections/CTA";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -48,6 +49,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <Navbar />
           <main>{children}</main>
+          <CTA />
           <Footer />
           <div className="sticky bottom-0 flex min-h-18 items-end sm:hidden">
             <Navigation />

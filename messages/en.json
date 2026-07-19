@@ -104,14 +104,10 @@
     "businesses": {
         "title": "Perfect for businesses like yours",
         "items": {
-            "salon": "Beauty Salons",
-            "spa": "Spa Centers",
-            "nails": "Nail Artists",
-            "facial": "Facial Specialists",
-            "laser": "Laser Clinics",
-            "carwash": "Car Washes",
-            "massage": "Massage Centers",
-            "barber": "Barber Shops"
+            "salon": "Beauty Salons & Nail Artists",
+            "carwash": "Car Washes & Repair Shops",
+            "barber": "Barber Shops & Spas",
+            "clinics": "Clinics & Consultants"
         }
     },
     "testimonials": {
