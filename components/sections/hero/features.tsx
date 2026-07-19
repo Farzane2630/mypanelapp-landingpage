@@ -1,10 +1,12 @@
 import Checkbox from "@/components/ui/icons/checkbox.svg";
+import { useTranslations } from "next-intl";
 export default function Features() {
+  const t = useTranslations("hero.features");
   const featureItems = [
-    { id: "1", title: "online Booking 27/7" },
-    { id: "2", title: "Automated SMS & Email Reminders" },
-    { id: "3", title: "Google Maps Integration" },
-    { id: "4", title: "Secure Online Payments & Deposit" },
+    { id: "1", title: t("onlineBooking") },
+    { id: "2", title: t("reminders") },
+    { id: "3", title: t("googleMaps") },
+    { id: "4", title: t("payments") },
   ];
   return (
     <ul className="grid gap-y-2">
