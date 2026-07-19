@@ -11,31 +11,31 @@ export default function FeatureCards() {
     {
       id: "1",
       title: t("onlineBooking.title"),
-      icon: <Calendar style={{ width: "3rem", hight: "3rem", fill: "#5b21b6" }} />,
+      icon: <Calendar style={{ width: "3rem", height: "3rem", fill: "#5b21b6" }} />,
       description: t("onlineBooking.description"),
     },
     {
       id: "2",
       title: t("reminders.title"),
-      icon: <SMS style={{ width: "2.5rem", hight: "3rem", fill: "#5b21b6" }} />,
+      icon: <SMS style={{ width: "2.5rem", height: "3rem", fill: "#5b21b6" }} />,
       description: t("reminders.description"),
     },
     {
       id: "3",
       title: t("googleMaps.title"),
-      icon: <Location style={{ width: "3rem", hight: "3rem", fill: "#5b21b6" }} />,
+      icon: <Location style={{ width: "3rem", height: "3rem", fill: "#5b21b6" }} />,
       description: t("googleMaps.description"),
     },
     {
       id: "4",
       title: t("payments.title"),
-      icon: <BankCard style={{ width: "3rem", hight: "3rem", fill: "#5b21b6" }} />,
+      icon: <BankCard style={{ width: "3rem", height: "3rem", fill: "#5b21b6" }} />,
       description: t("payments.description"),
     },
     {
       id: "5",
       title: t("businessInsights.title"),
-      icon: <Stats style={{ width: "3rem", hight: "3rem", fill: "#5b21b6" }} />,
+      icon: <Stats style={{ width: "3rem", height: "3rem", fill: "#5b21b6" }} />,
       description: t("businessInsights.description"),
     },
   ];
