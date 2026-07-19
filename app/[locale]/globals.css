@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+@theme {
+  /* Primary */
+  --color-primary-50: #faf7ff;
+  --color-primary-100: #f4edff;
+  --color-primary-200: #e9d5ff;
+  --color-primary-300: #d8b4fe;
+  --color-primary-400: #c084fc;
+  --color-primary-500: #8b5cf6;
+  --color-primary-600: #7c3aed;
+  --color-primary-700: #6d28d9;
+  --color-primary-800: #5b21b6;
+  --color-primary-900: #4c1d95;
+
+  /* Background */
+  --color-background: #ffffff;
+  --color-background-soft: #fafafc;
+  --color-background-card: #ffffff;
+  --color-background-hero: #faf7ff;
+
+  /* Text */
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-text-muted: #9ca3af;
+  --color-text-light: #ffffff;
+
+  /* Border */
+  --color-border: #e5e7eb;
+  --color-border-soft: #f3f4f6;
+
+  /* Status colors */
+  --color-success: #22c55e;
+  --color-success-light: #dcfce7;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+
+  /* Radius */
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+
+  /* Shadows */
+  --shadow-card: 0 10px 30px rgba(139, 92, 246, 0.08);
+  --shadow-hero: 0 25px 50px rgba(139, 92, 246, 0.15);
+  --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.25);
+}
