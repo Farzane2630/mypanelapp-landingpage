@@ -1,10 +1,11 @@
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
+import { ReactElement } from "react";
 import { twMerge } from "tailwind-merge";
 
 type GetStartedProps = {
   className?: string;
-  title?: string;
+  title?: string | ReactElement;
   href?: string;
 };
 
