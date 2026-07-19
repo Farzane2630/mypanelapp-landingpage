@@ -33,6 +33,31 @@
             "watchDemo": "Watch Demo"
         }
     },
+    "features": {
+        "title": "Everything You Need to Manage Bookings",
+        "items": {
+            "onlineBooking": {
+                "title": "Online Booking",
+                "description": "Allow your customers to book appointments 24/7 from any device."
+            },
+            "reminders": {
+                "title": "SMS & Email Reminders",
+                "description": "Reduce no-shows with automated reminders and notifications."
+            },
+            "googleMaps": {
+                "title": "Google Maps Integration",
+                "description": "Help customers find you easily with one-click directions."
+            },
+            "payments": {
+                "title": "Online Payments & Deposits",
+                "description": "Secure payments and deposits to confirm appointments."
+            },
+            "businessInsights": {
+                "title": "Business Insights",
+                "description": "Track appointments, revenue, and customer insights in one place."
+            }
+        }
+    },
     "socialProof": {
         "title": "Perfect for businesses like"
     },
