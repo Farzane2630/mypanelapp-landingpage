@@ -2,7 +2,7 @@
 
 import { useLocaleSwitch } from "@/hooks/useLocaleSwitch";
 import LanguageIcon from "@/components/ui/icons/language.svg";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { LocaleType } from "@/types/Locales";
 import { twMerge } from "tailwind-merge";
 
@@ -12,8 +12,8 @@ export default function LanguageSwitcher() {
 
   // is extnded in the future
   const languages = [
-    { value: "en", label: "English" },
-    { value: "fa", label: "فارسی" },
+    { value: "en" as LocaleType, label: "English" },
+    { value: "fa" as LocaleType, label: "فارسی" },
   ];
 
   const handleChangeLanguage = (lang: LocaleType) => {
