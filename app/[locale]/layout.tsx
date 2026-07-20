@@ -9,6 +9,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import Navigation from "@/components/layout/navbar/navigation";
 import CTA from "@/components/sections/CTA";
+import { twMerge } from "tailwind-merge";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -42,7 +43,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       suppressHydrationWarning
-      className={geist.className}
+      className={twMerge("scroll-smooth", geist.className)}
       dir={locale === "fa" ? "rtl" : "ltr"}
     >
       <body className="relative min-h-screen bg-slate-200 text-slate-800 antialiased">

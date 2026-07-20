@@ -6,7 +6,7 @@ export default function Navigation() {
   const t = useTranslations("navbar");
   const locale = useLocale() as LocaleType;
   const navItems = [
-    { href: "/features", title: t("features") },
+    { href: `/${locale}#features`, title: t("features") },
     { href: "/businesses", title: t("businesses") },
     { href: "/pricing", title: t("pricing") },
     {
