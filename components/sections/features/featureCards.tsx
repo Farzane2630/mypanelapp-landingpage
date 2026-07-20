@@ -17,7 +17,7 @@ export default function FeatureCards() {
     {
       id: "2",
       title: t("reminders.title"),
-      icon: <SMS style={{ width: "2.5rem", height: "3rem", fill: "#5b21b6" }} />,
+      icon: <SMS style={{ width: "3rem", height: "3rem", fill: "#5b21b6" }} />,
       description: t("reminders.description"),
     },
     {
@@ -46,7 +46,7 @@ export default function FeatureCards() {
           key={feat.id}
           className="bg-background-soft border-border flex items-center gap-4 rounded-lg border px-4 py-6 text-start sm:flex-col sm:px-12 sm:py-8 sm:text-center"
         >
-          <span className="flex h-18 w-18 items-center justify-center rounded-lg bg-purple-200 sm:rounded-xl">
+          <span className="sm:px-auto flex h-18 w-18 items-center justify-center rounded-lg bg-purple-200 px-2 sm:rounded-xl">
             {feat.icon}
           </span>
           <h2 className="text-text-primarytext-xl font-bold">{feat.title}</h2>
