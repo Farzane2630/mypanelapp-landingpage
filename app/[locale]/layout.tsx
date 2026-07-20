@@ -15,13 +15,30 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+const baseURL = process.env.NEXT_PUBLIC_MEDATADABASE_URL || "";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_MEDATADABASE_URL || ""),
+  metadataBase: new URL(baseURL),
   title: {
     default: "MyPanelApp",
     template: "%s | MyPanelApp",
   },
   description: "Create and manage your online booking platform in minutes with MyPanelApp.",
+
+  openGraph: {
+    title: "...",
+    description: "...",
+    url: baseURL,
+    siteName: "MyPanelApp",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
 };
 const geist = Geist({ subsets: ["latin"] });
 
