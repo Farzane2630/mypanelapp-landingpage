@@ -1,0 +1,20 @@
+{
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/"
+        },
+        {
+            "source": "/about",
+            "destination": "/about"
+        },
+        {
+            "source": "/pricing",
+            "destination": "/pricing"
+        },
+        {
+            "source": "/:slug",
+            "destination": "https://app.mypanelapp.ir/:slug"
+        }
+    ]
+}
