@@ -15,7 +15,7 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mypanelapp.ir"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_MEDATADABASE_URL || ""),
   title: {
     default: "MyPanelApp",
     template: "%s | MyPanelApp",
