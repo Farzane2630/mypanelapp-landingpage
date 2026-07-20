@@ -1,0 +1,194 @@
+{
+    "appname": "MyPanelApp",
+    "metadata": {
+        "title": "MyPanelApp | Online-Terminbuchung für Beauty- und Dienstleistungsunternehmen",
+        "description": "Nehmen Sie Online-Termine entgegen und verwalten Sie Ihren Kalender, Ihre Kunden und Dienstleistungen über ein modernes Dashboard."
+    },
+    "navbar": {
+        "features": "Funktionen",
+        "businesses": "Für wen geeignet",
+        "pricing": "Preise",
+        "demo": "Demo",
+        "faq": "FAQ",
+        "contact": "Kontakt",
+        "login": "Anmelden",
+        "startTrial": "Kostenlos testen"
+    },
+    "hero": {
+        "imageAlt": "Screenshot der Terminverwaltung im Admin-Dashboard",
+        "title": {
+            "highlight": "Intelligente Terminbuchung.",
+            "line1": "Zufriedenere Kunden.",
+            "line2": "Mehr Zeit für Sie."
+        },
+        "description": "MyPanelApp ist die All-in-One-Plattform für Terminmanagement, mit der Unternehmen Buchungen automatisieren, Erinnerungen versenden und mühelos wachsen können.",
+        "features": {
+            "onlineBooking": "24/7 Online-Terminbuchung",
+            "reminders": "Automatische SMS- und E-Mail-Erinnerungen",
+            "googleMaps": "Google Maps Integration",
+            "payments": "Sichere Online-Zahlungen & Anzahlungen"
+        },
+        "cta": {
+            "startFreeTrial": "Kostenlos testen",
+            "watchDemo": "Demo ansehen"
+        }
+    },
+    "features": {
+        "title": "Alles, was Sie für Ihre Terminverwaltung benötigen",
+        "items": {
+            "onlineBooking": {
+                "title": "Online-Terminbuchung",
+                "description": "Ermöglichen Sie Ihren Kunden, rund um die Uhr Termine von jedem Gerät aus zu buchen."
+            },
+            "reminders": {
+                "title": "SMS- & E-Mail-Erinnerungen",
+                "description": "Reduzieren Sie Nichterscheinen durch automatische Erinnerungen und Benachrichtigungen."
+            },
+            "googleMaps": {
+                "title": "Google Maps Integration",
+                "description": "Helfen Sie Ihren Kunden, Sie mit nur einem Klick zu finden."
+            },
+            "payments": {
+                "title": "Online-Zahlungen & Anzahlungen",
+                "description": "Sichere Zahlungen und Anzahlungen zur Terminbestätigung."
+            },
+            "businessInsights": {
+                "title": "Geschäftseinblicke",
+                "description": "Behalten Sie Termine, Umsätze und Kundendaten an einem Ort im Blick."
+            }
+        }
+    },
+    "socialProof": {
+        "title": "Perfekt geeignet für Unternehmen wie"
+    },
+    "why": {
+        "title": "Warum MyPanelApp?",
+        "booking": {
+            "title": "Nehmen Sie Buchungen entgegen – auch im Schlaf",
+            "description": "Ihre Kunden können jederzeit und von jedem Gerät aus Termine buchen."
+        },
+        "manage": {
+            "title": "Alles an einem Ort verwalten",
+            "description": "Termine, Kunden, Kalender, Dienstleistungen und Berichte – alles in einem Dashboard."
+        },
+        "start": {
+            "title": "Noch heute starten – ganz einfach",
+            "description": "Keine technischen Kenntnisse erforderlich. Keine Installation. Erstellen Sie einfach Ihre Buchungsseite und legen Sie los."
+        }
+    },
+    "dashboard": {
+        "badge": "All-in-One-Dashboard",
+        "title": "Alles, was Sie für Ihr Unternehmen brauchen",
+        "description": "Leistungsstarke Tools, um Zeit zu sparen, Nichterscheinen zu reduzieren und Ihr Unternehmen wachsen zu lassen.",
+        "button": "Alle Funktionen entdecken",
+        "tabs": {
+            "appointments": "Termine",
+            "calendar": "Kalender",
+            "customers": "Kunden",
+            "services": "Dienstleistungen",
+            "settings": "Einstellungen"
+        }
+    },
+    "booking": {
+        "badge": "Ein schönes Buchungserlebnis",
+        "title": "Ihre Kunden werden die Terminbuchung lieben",
+        "description": "Ein einfaches und schnelles Buchungserlebnis, das die Kundenzufriedenheit steigert.",
+        "steps": {
+            "service": "Dienstleistung wählen",
+            "staff": "Spezialisten auswählen",
+            "date": "Datum & Uhrzeit wählen",
+            "details": "Ihre Angaben",
+            "done": "Termin bestätigt"
+        }
+    },
+    "businesses": {
+        "title": "Perfekt für Ihr Unternehmen",
+        "items": {
+            "salon": "Kosmetikstudios & Nageldesigner",
+            "carwash": "Autowaschanlagen & Werkstätten",
+            "barber": "Barbershops & Spas",
+            "clinics": "Praxen & Berater"
+        }
+    },
+    "testimonials": {
+        "title": "Von Unternehmern geschätzt",
+        "items": {
+            "1": {
+                "name": "Sara",
+                "role": "Inhaberin eines Kosmetikstudios",
+                "text": "Ich verbringe meinen Tag nicht mehr damit, Buchungsanrufe entgegenzunehmen. Meine Kunden buchen jetzt einfach online."
+            },
+            "2": {
+                "name": "Ali",
+                "role": "Inhaber einer Autowaschanlage",
+                "text": "Die Terminverwaltung ist endlich unkompliziert. Keine Doppelbuchungen mehr."
+            },
+            "3": {
+                "name": "Maryam",
+                "role": "Nageldesignerin",
+                "text": "Professionell, einfach und genau das, was mein Unternehmen gebraucht hat."
+            }
+        }
+    },
+    "pricing": {
+        "title": "Einfache und transparente Preise",
+        "free": {
+            "name": "Kostenlos",
+            "description": "Perfekt für den Einstieg",
+            "button": "Kostenlos starten",
+            "features": [
+                "Buchungsseite",
+                "Kalender",
+                "Kundenverwaltung",
+                "E-Mail-Benachrichtigungen",
+                "Gastbuchungen"
+            ]
+        },
+        "pro": {
+            "name": "Pro",
+            "description": "Erweiterte Funktionen freischalten",
+            "badge": "Am beliebtesten",
+            "button": "Kostenlos testen",
+            "features": [
+                "SMS-Erinnerungen",
+                "Online-Zahlungen",
+                "Google Maps Standort",
+                "Anzahlungen",
+                "Stornierungslink",
+                "Kommende Premium-Funktionen"
+            ]
+        }
+    },
+    "trial": {
+        "title": "14 Tage kostenlos testen",
+        "description": "Keine Kreditkarte erforderlich.",
+        "features": {
+            "cancel": "Jederzeit kündbar",
+            "upgrade": "Tarif jederzeit upgraden oder downgraden",
+            "support": "Wir unterstützen Sie dabei, Ihr Unternehmen wachsen zu lassen."
+        }
+    },
+    "cta": {
+        "title": "Bereit, Ihren nächsten Online-Termin entgegenzunehmen?",
+        "description": "Schließen Sie sich tausenden Unternehmen an, die mit MyPanelApp wachsen.",
+        "primary": "Kostenlos testen",
+        "secondary": "Live-Demo ansehen"
+    },
+    "footer": {
+        "appname": "MyPanelApp",
+        "description": "Die All-in-One-Plattform für Terminmanagement in Unternehmen.",
+        "product": "Produkt",
+        "company": "Unternehmen",
+        "resources": "Ressourcen",
+        "language": "Sprache",
+        "links": {
+            "features": "Funktionen",
+            "pricing": "Preise",
+            "roadmap": "Roadmap",
+            "faq": "FAQ",
+            "privacy": "Datenschutzerklärung",
+            "terms": "Nutzungsbedingungen",
+            "contact": "Kontakt"
+        }
+    }
+}

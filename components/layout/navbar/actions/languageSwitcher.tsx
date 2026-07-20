@@ -14,6 +14,7 @@ export default function LanguageSwitcher() {
   const languages = [
     { value: "en" as LocaleType, label: "English" },
     { value: "fa" as LocaleType, label: "فارسی" },
+    { value: "de" as LocaleType, label: "Deutch" },
   ];
 
   const handleChangeLanguage = (lang: LocaleType) => {
