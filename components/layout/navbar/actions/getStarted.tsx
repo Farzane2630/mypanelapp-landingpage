@@ -22,7 +22,7 @@ export default function GetStarted({ className, title, href }: GetStartedProps) 
       rel="noopener noreferrer"
       href={
         href ??
-        `${locale === "en" ? process.env.NEXT_PUBLIC_DEMO_URL_EN : process.env.NEXT_PUBLIC_DEMO_URL_FA}`
+        `${locale === "en" || locale === "de" ? process.env.NEXT_PUBLIC_DEMO_URL_EN : process.env.NEXT_PUBLIC_DEMO_URL_FA}`
       }
     >
       {title ?? t("demo")}
