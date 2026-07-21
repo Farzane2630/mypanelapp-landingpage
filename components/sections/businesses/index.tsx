@@ -29,7 +29,11 @@ export default function Businesses() {
     },
   ];
   return (
-    <section aria-label="businesses-section" className="grid justify-items-center gap-y-4 py-8">
+    <section
+      id="businesses"
+      aria-label="businesses-section"
+      className="grid justify-items-center gap-y-4 py-8"
+    >
       <p className="title text-center text-2xl font-medium">{t("title")}</p>
       <div className="bg-primary-900 h-1 w-20"></div>
 
