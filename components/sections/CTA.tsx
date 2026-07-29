@@ -15,7 +15,7 @@ export default async function CTA() {
       <GetStarted
         className="bg-white text-purple-700"
         title={t("primary")}
-        href={process.env.NEXT_PUBLIC_ADMIN_URL}
+        href={`${process.env.NEXT_PUBLIC_ADMIN_URL}`}
       />
     </section>
   );
