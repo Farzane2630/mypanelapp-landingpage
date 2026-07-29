@@ -8,6 +8,7 @@ export default function CTA() {
       <GetStarted
         title={t("startFreeTrial")}
         className="bg-primary-700 w-full text-center text-white sm:w-fit"
+        href={`${process.env.NEXT_PUBLIC_ADMIN_URL}`}
       />
       <GetStarted
         title={

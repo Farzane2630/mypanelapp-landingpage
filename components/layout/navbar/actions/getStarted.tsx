@@ -12,6 +12,7 @@ type GetStartedProps = {
 export default function GetStarted({ className, title, href }: GetStartedProps) {
   const t = useTranslations("navbar");
   const locale = useLocale();
+
   return (
     <Link
       className={twMerge(
